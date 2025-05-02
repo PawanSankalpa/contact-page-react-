@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Container */
+  .container {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    /* Added padding to prevent inputs from touching the container edges */
+    box-sizing: border-box;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fbd786;
+    transition: transform 0.3s ease;
+  }
+  h1:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Paragraph */
+  p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  /* Inputs */
+  input {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #f4f4f4;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Added padding for space inside input fields */
+    box-sizing: border-box;
+  }
+  input::placeholder {
+    color: #888;
+  }
+  input:focus {
+    background-color: #3a3a3a;
+    outline: none;
+    transform: scale(1.02);
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+  }
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input,
+    button {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+  

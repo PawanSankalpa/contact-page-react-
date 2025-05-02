@@ -51,6 +51,7 @@ function App() {
         type="text"
         placeholder="First Name"
         value={contact.fName}
+        autoComplete="off"
       />
       <input
         name="lName"
@@ -58,6 +59,7 @@ function App() {
         type="text"
         placeholder="Last Name"
         value={contact.lName}
+        autoComplete="off"
       />
       <input
         name="email"
@@ -65,6 +67,7 @@ function App() {
         type="text"
         placeholder="Email Adress"
         value={contact.email}
+        autoComplete="off"
       />
       <button onClick={handleSubmit}>Submit</button>
     </div>
